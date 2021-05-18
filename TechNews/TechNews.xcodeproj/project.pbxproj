@@ -11,13 +11,14 @@
 		FB3D66C22646FABA00B480C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D66C12646FABA00B480C2 /* SceneDelegate.swift */; };
 		FB3D66C42646FABA00B480C2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D66C32646FABA00B480C2 /* MainViewController.swift */; };
 		FB3D66C72646FABA00B480C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3D66C52646FABA00B480C2 /* Main.storyboard */; };
-		FB3D66CA2646FABA00B480C2 /* TechNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB3D66C82646FABA00B480C2 /* TechNews.xcdatamodeld */; };
 		FB3D66CC2646FAC200B480C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3D66CB2646FAC200B480C2 /* Assets.xcassets */; };
 		FB3D66CF2646FAC200B480C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3D66CD2646FAC200B480C2 /* LaunchScreen.storyboard */; };
 		FB3D66DA2646FAC200B480C2 /* TechNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D66D92646FAC200B480C2 /* TechNewsTests.swift */; };
 		FB3D66E52646FAC200B480C2 /* TechNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D66E42646FAC200B480C2 /* TechNewsUITests.swift */; };
 		FB3D66F42646FE7A00B480C2 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D66F22646FE7A00B480C2 /* NewsCollectionViewCell.swift */; };
 		FB3F53742647B6C500EE076F /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F53732647B6C500EE076F /* RestApi.swift */; };
+		FB85558226541AFD0040E1CD /* TC-Info-Sample.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB85558126541AFD0040E1CD /* TC-Info-Sample.plist */; };
+		FB85558626541C150040E1CD /* TC-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB85558526541C150040E1CD /* TC-Info.plist */; };
 		FBC61EC3264709A200308823 /* NewsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC61EC2264709A200308823 /* NewsDetails.swift */; };
 		FBC61EC626470D2F00308823 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC61EC526470D2F00308823 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +46,6 @@
 		FB3D66C12646FABA00B480C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB3D66C32646FABA00B480C2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FB3D66C62646FABA00B480C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB3D66C92646FABA00B480C2 /* TechNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TechNews.xcdatamodel; sourceTree = "<group>"; };
 		FB3D66CB2646FAC200B480C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB3D66CE2646FAC200B480C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB3D66D02646FAC200B480C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +57,8 @@
 		FB3D66E62646FAC200B480C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB3D66F22646FE7A00B480C2 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB3F53732647B6C500EE076F /* RestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
+		FB85558126541AFD0040E1CD /* TC-Info-Sample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TC-Info-Sample.plist"; sourceTree = "<group>"; };
+		FB85558526541C150040E1CD /* TC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TC-Info.plist"; sourceTree = "<group>"; };
 		FBC61EC2264709A200308823 /* NewsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetails.swift; sourceTree = "<group>"; };
 		FBC61EC526470D2F00308823 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,7 +119,8 @@
 				FB3D66CB2646FAC200B480C2 /* Assets.xcassets */,
 				FB3D66CD2646FAC200B480C2 /* LaunchScreen.storyboard */,
 				FB3D66D02646FAC200B480C2 /* Info.plist */,
-				FB3D66C82646FABA00B480C2 /* TechNews.xcdatamodeld */,
+				FB85558526541C150040E1CD /* TC-Info.plist */,
+				FB85558126541AFD0040E1CD /* TC-Info-Sample.plist */,
 			);
 			path = TechNews;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				FB3D66B82646FABA00B480C2 /* Sources */,
 				FB3D66B92646FABA00B480C2 /* Frameworks */,
 				FB3D66BA2646FABA00B480C2 /* Resources */,
+				FB855587265421970040E1CD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -281,6 +285,8 @@
 				FB3D66CF2646FAC200B480C2 /* LaunchScreen.storyboard in Resources */,
 				FB3D66CC2646FAC200B480C2 /* Assets.xcassets in Resources */,
 				FB3D66C72646FABA00B480C2 /* Main.storyboard in Resources */,
+				FB85558226541AFD0040E1CD /* TC-Info-Sample.plist in Resources */,
+				FB85558626541C150040E1CD /* TC-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +306,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FB855587265421970040E1CD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nCONFIG_FILE_BASE_NAME=\"TC-Info\"\nCONFIG_FILE_NAME=${CONFIG_FILE_BASE_NAME}.plist\nSAMPLE_CONFIG_FILE_NAME=${CONFIG_FILE_BASE_NAME}-Sample.plist\nCONFIG_FILE_PATH=$SRCROOT/$PRODUCT_NAME/$CONFIG_FILE_NAME\nSAMPLE_CONFIG_FILE_PATH=$SRCROOT/$PRODUCT_NAME/$SAMPLE_CONFIG_FILE_NAME\nif [ -f \"$CONFIG_FILE_PATH\" ]; then\n  echo \"$CONFIG_FILE_PATH exists.\"\nelse\n  echo \"$CONFIG_FILE_PATH does not exist, copying sample\"\n  cp -v \"${SAMPLE_CONFIG_FILE_PATH}\" \"${CONFIG_FILE_PATH}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB3D66B82646FABA00B480C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -308,7 +334,6 @@
 				FB3F53742647B6C500EE076F /* RestApi.swift in Sources */,
 				FB3D66C42646FABA00B480C2 /* MainViewController.swift in Sources */,
 				FB3D66C02646FABA00B480C2 /* AppDelegate.swift in Sources */,
-				FB3D66CA2646FABA00B480C2 /* TechNews.xcdatamodeld in Sources */,
 				FB3D66C22646FABA00B480C2 /* SceneDelegate.swift in Sources */,
 				FBC61EC626470D2F00308823 /* DetailsViewController.swift in Sources */,
 				FB3D66F42646FE7A00B480C2 /* NewsCollectionViewCell.swift in Sources */,
@@ -645,19 +670,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FB3D66C82646FABA00B480C2 /* TechNews.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FB3D66C92646FABA00B480C2 /* TechNews.xcdatamodel */,
-			);
-			currentVersion = FB3D66C92646FABA00B480C2 /* TechNews.xcdatamodel */;
-			path = TechNews.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FB3D66B42646FABA00B480C2 /* Project object */;
 }

@@ -9,14 +9,37 @@ import Foundation
 
 class RestApi {
     
-    private let baseUrl = "http://newsapi.org/v2/top-headlines?"
-    private let source = "techcrunch"
-    private let apiKey = "c2dc28e08dac4fc2ad7eb8b22b1854f4"
-    
+    private var hostUrl: String {
+        get {
+            guard let filePath = Bundle.main.path(forResource: "TC-Info", ofType: "plist") else {
+                fatalError("TC-Info.plist can not be found")
+            }
+            let plist = NSDictionary(contentsOfFile: filePath)
+            guard let value = plist?.object(forKey: "HOST") as? String else {
+                fatalError("Host not found inside TC-Info.plist")
+            }
+            return value
+        }
+    }
+    private var apiKey: String {
+        get {
+            guard let filePath = Bundle.main.path(forResource: "TC-Info", ofType: "plist") else {
+                fatalError("TC-Info.plist can not be found")
+            }
+            let plist = NSDictionary(contentsOfFile: filePath)
+            guard let value = plist?.object(forKey: "API_KEY") as? String else {
+                fatalError("Api key not found inside TC-Info.plist")
+            }
+            if value.starts(with: "_") {
+                fatalError("Please Get a New API KEY")
+            }
+            return value
+        }
+    }
     
     func getUrlForNews() -> URL? {
         
-        let resourceString = "\(baseUrl)sources=\(source)&apiKey=\(apiKey)"
+        let resourceString = "\(hostUrl)\(apiKey)"
         if let url = URL(string: resourceString) {
             return url
         } else {
