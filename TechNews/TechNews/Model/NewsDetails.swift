@@ -32,8 +32,6 @@ struct Articles: Decodable {
     
 }
 
-
-
 struct Result: Decodable {
     
     let status: String?
